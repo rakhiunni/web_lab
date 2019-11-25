@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Author" content="Rakhimol Rajendran">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h2>To Do List</h2>
+    </header>
+    <main>
+        <form action="/" method="get" id="add_item">
+            <label for="label_content">Add a To-Do</label>
+            <input id="label_content" type="text" name="label_content">
+            <input id="submit_button" type="image" src="images/add.svg" alt="Add a To Do">
+        </form>
+        <form action="/" method="get" class="form_checkbox">
+            <ul id="list_items">
+                
+            </ul>
+        </form>
+    </main>
+
+    <footer>
+        <h2>Copyright &copy;2019</h2>
+    </footer>
+    <template id="add-item">
+        <li>
+            <input id="select_item" type="checkbox" name="select_item" class="checkbox_field" onclick="localstorage(this)">
+            <label for="select_item" class="checkbox_label"></label>
+        </li>
+    </template>
+    <script src="js/script.js"></script>
+</body>
+</html>
