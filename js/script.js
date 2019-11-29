@@ -1,9 +1,3 @@
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-         navigator.serviceWorker.register('/sw.js');
-     });
- }
-
 
 function run() {
     let btn = document.querySelector('#submit_button');

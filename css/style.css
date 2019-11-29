@@ -29,6 +29,21 @@ header {
     align-items: center;
     border-bottom: 1px solid #D1CBCA;
 }
+
+@keyframes fade-out /* Name */ {
+  0% { /* key frame position */
+      opacity: 0; /* property */
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+header h2 {
+  animation: fade-out 5s ease-in;
+}
+
+
 header h2 {
     font-size: 2rem;
 }
@@ -110,6 +125,7 @@ input[type=checkbox] + label {
     height: calc(100% - 3rem);
     overflow-x: hidden;
     overflow-y: auto;
+    padding-top: 30px;
   }
 
   #list_items {
@@ -124,3 +140,16 @@ height: 100%;
 font-size: 1rem;
 list-style: none;
 }
+.button_delete
+{
+  float: right;
+  text-transform: capitalize;
+  margin-top: 12px;
+}
+.checkbox_label
+{
+  float: left;
+}
+
+
+
