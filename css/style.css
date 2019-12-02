@@ -144,7 +144,19 @@ list-style: none;
 {
   float: right;
   text-transform: capitalize;
-  margin-top: 12px;
+  margin-top: 5px;
+  background-image: linear-gradient(to right, #f6d365 0%, #e41515 51%, #ea0404 100%);
+padding: 10px 15px;
+border: none;
+border-radius: 15px;
+transition: all 0.45s;
+color: #fff;
+font-size: 0.7rem;
+}
+
+.button_delete:hover
+{
+  background-image: linear-gradient(to right, #d43510 0%, #cc4a24 51%, #ef9f9f 100%);
 }
 .checkbox_label
 {
@@ -153,3 +165,19 @@ list-style: none;
 
 
 
+
+#footer {
+  position: relative;
+  font-size: 20px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  from {bottom: 0px;}
+  to {bottom: 100px;}
+}
+
+@keyframes mymove {
+  from {bottom: 0px;}
+  to {bottom: 100px;}
+}

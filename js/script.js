@@ -67,4 +67,21 @@ function addToDoList(event) {
 
 
 
+
+
 run();
+
+    let deleteBtn = document.getElementsByClassName("button_delete");
+    Array.prototype.slice.call(deleteBtn).forEach(function(item) {
+      item.addEventListener("click", function(e) {
+        e.target.parentNode.remove()
+      });
+    
+    })
+
+
+
+
+
+
+
