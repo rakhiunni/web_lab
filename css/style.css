@@ -29,21 +29,6 @@ header {
     align-items: center;
     border-bottom: 1px solid #D1CBCA;
 }
-
-@keyframes fade-out /* Name */ {
-  0% { /* key frame position */
-      opacity: 0; /* property */
-  }
-  100% {
-      opacity: 1;
-  }
-}
-
-header h2 {
-  animation: fade-out 5s ease-in;
-}
-
-
 header h2 {
     font-size: 2rem;
 }
@@ -125,7 +110,6 @@ input[type=checkbox] + label {
     height: calc(100% - 3rem);
     overflow-x: hidden;
     overflow-y: auto;
-    padding-top: 30px;
   }
 
   #list_items {
@@ -140,97 +124,3 @@ height: 100%;
 font-size: 1rem;
 list-style: none;
 }
-.button_delete
-{
-  float: right;
-  text-transform: capitalize;
-  margin-top: 5px;
-  background-image: linear-gradient(to right, #f6d365 0%, #e41515 51%, #ea0404 100%);
-padding: 10px 15px;
-border: none;
-border-radius: 15px;
-transition: all 0.45s;
-color: #fff;
-font-size: 0.7rem;
-}
-
-.button_delete:hover
-{
-  background-image: linear-gradient(to right, #d43510 0%, #cc4a24 51%, #ef9f9f 100%);
-}
-.checkbox_label
-{
-  float: left;
-}
-
-
-
-
-#footer {
-  position: relative;
-  font-size: 20px;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-  from {bottom: 0px;}
-  to {bottom: 100px;}
-}
-
-@keyframes mymove {
-  from {bottom: 0px;}
-  to {bottom: 100px;}
-}
-
-
-
-/* media queries */
-
-@media screen and (max-width:767px){
-
-  header h2 {
-    font-size: 1.7rem;
-    color: #fff;
-}
-:root {
-  --body-color-first: #488cff;
-  --body-second-color: #ffff8c;
-  --color_h2:#2215e4;
-}
-body {
-  background-color: var(--body-color-first);
-}
-.button_delete
-{
-  background-image: linear-gradient(to right, #ea0404 0%, #2215e4 51%, #ea8e04 100%);
-}
-
-
-
-}
-@media screen and (max-width:480px){
-  header h2 {
-    font-size: 1.4rem;
-    color: var(--color_h2);
-} 
-
-body {
-  background-color: var( --body-second-color);
-}
-@keyframes mymove {
-  from {bottom: 0px;}
-  to {bottom: 30px;}
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
