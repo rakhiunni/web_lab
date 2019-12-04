@@ -181,3 +181,56 @@ font-size: 0.7rem;
   from {bottom: 0px;}
   to {bottom: 100px;}
 }
+
+
+
+/* media queries */
+
+@media screen and (max-width:767px){
+
+  header h2 {
+    font-size: 1.7rem;
+    color: #fff;
+}
+:root {
+  --body-color-first: #488cff;
+  --body-second-color: #ffff8c;
+  --color_h2:#2215e4;
+}
+body {
+  background-color: var(--body-color-first);
+}
+.button_delete
+{
+  background-image: linear-gradient(to right, #ea0404 0%, #2215e4 51%, #ea8e04 100%);
+}
+
+
+
+}
+@media screen and (max-width:480px){
+  header h2 {
+    font-size: 1.4rem;
+    color: var(--color_h2);
+} 
+
+body {
+  background-color: var( --body-second-color);
+}
+@keyframes mymove {
+  from {bottom: 0px;}
+  to {bottom: 30px;}
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
