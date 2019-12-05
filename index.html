@@ -26,14 +26,35 @@
     </main>
 
     <footer>
-        <h2>Copyright &copy;2019</h2>
+        <h2 id="footer" onmouseover="myFunction()">Copyright &copy;2019</h2>
     </footer>
     <template id="add-item">
-        <li>
+        <li> 
             <input id="select_item" type="checkbox" name="select_item" class="checkbox_field" onclick="localstorage(this)">
             <label for="select_item" class="checkbox_label"></label>
+            <input type="button" value="delete" class="button_delete">
         </li>
     </template>
     <script src="js/script.js"></script>
+    <script src="sw.js"></script>
+    <script>
+        var x = document.getElementById("footer");
+        
+        // Start the animation with JavaScript
+        function myFunction() {
+          x.style.WebkitAnimation = "mymove 4s 2"; 
+          x.style.animation = "mymove 4s 2";     
+        }
+        
+        </script>
+        <script>
+    if ('serviceWorker' in navigator) {
+       window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js');
+        });
+    }
+</script>
+
+
 </body>
 </html>
