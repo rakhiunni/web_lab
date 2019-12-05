@@ -35,7 +35,6 @@
             <input type="button" value="delete" class="button_delete">
         </li>
     </template>
-    <script src="sw.js"></script>
 
     <script src="js/script.js"></script>
     <script>
@@ -51,11 +50,10 @@
         <script>
     if ('serviceWorker' in navigator) {
        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js');
+            navigator.serviceWorker.register('sw.js');
         });
     }
 </script>
-
 
 </body>
 </html>
