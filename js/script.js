@@ -16,7 +16,7 @@ function loadList() {
     const db = window.localStorage;
      const list = document.querySelector('#list_items');
     Object.keys(db).forEach(addNewItem);
-     Object.keys(db).forEach((item) => {
+    Object.keys(db).forEach((item) => {
          const node = document.createRange().createContextualFragment(db.getItem(item));
         //  list.appendChild(node);
      });
@@ -67,4 +67,39 @@ function addToDoList(event) {
 
 
 
+
+
 run();
+
+    // let deleteBtn = document.getElementsByClassName("button_delete");
+    // Array.prototype.slice.call(deleteBtn).forEach(function(item) {
+    //       var asd = item.parentNode;
+    //       console.log("fhgfh"+asd.querySelector('[type="checkbox"]').id);
+    //       var idDel = asd.querySelector('[type="checkbox"]').id;
+    //       window.localStorage.removeItem(idDel);
+    //      item.target.parentNode.remove();
+    //     var firstParent = item.parentNode;
+    //     console.log("fghj" + firstParent);
+    //     var secondParent = firstParent.parentNode;
+    //     secondParent.removeChild(firstParent);
+    //   });
+    
+    
+
+    let deleteBtn = document.getElementsByClassName("button_delete");
+    Array.prototype.slice.call(deleteBtn).forEach(function(item) {
+      item.addEventListener("click", function(e) {
+        var asd = item.parentNode;
+        var idDel = asd.querySelector('[type="checkbox"]').id;
+        window.localStorage.removeItem(idDel);
+        e.target.parentNode.remove()
+      });
+    
+    })
+
+
+
+
+
+
+
