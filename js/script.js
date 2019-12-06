@@ -84,7 +84,6 @@ run();
     //     secondParent.removeChild(firstParent);
     //   });
     
-    
 
     let deleteBtn = document.getElementsByClassName("button_delete");
     Array.prototype.slice.call(deleteBtn).forEach(function(item) {
@@ -92,7 +91,7 @@ run();
         var asd = item.parentNode;
         var idDel = asd.querySelector('[type="checkbox"]').id;
         window.localStorage.removeItem(idDel);
-        e.target.parentNode.remove()
+        e.target.parentNode.remove();
       });
     
     })
