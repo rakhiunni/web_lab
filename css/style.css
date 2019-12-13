@@ -10,7 +10,6 @@
 html {
     box-sizing: border-box;
     font-size: calc(1rem + (5) * ((100vw - 300px) / (1080 - 300)));
-
 }
 
 :root,
@@ -71,6 +70,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px;
 }
 #item-list {
     display: flex;
@@ -228,4 +228,19 @@ body {
 
 
 
-
+#status {
+  position: fixed;
+  width: 100%;
+  font: bold 1em;
+  color: #FFF;
+  padding: 5px;
+  bottom: 0px;
+  text-align: center;
+  margin-top: 10px;
+}
+.online {
+  background: green;
+}
+.offline {
+  background: red;
+}
